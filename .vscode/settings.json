@@ -1,0 +1,10 @@
+{
+  "files.associations": {
+    "*.defs": "makefile",
+    "thread": "cpp",
+    "cstdlib": "cpp",
+    "chrono": "cpp",
+    "variant": "cpp",
+    "numbers": "cpp"
+  }
+}

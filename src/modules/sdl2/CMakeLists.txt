@@ -11,6 +11,7 @@ add_custom_target(Other_sdl2_Files SOURCES
 )
 
 target_compile_options(mltsdl2 PRIVATE ${MLT_COMPILE_OPTIONS})
+target_compile_options(mltsdl2 PRIVATE -g)
 
 target_link_libraries(mltsdl2 PRIVATE mlt m Threads::Threads PkgConfig::sdl2)
 

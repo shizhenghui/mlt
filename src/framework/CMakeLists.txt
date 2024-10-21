@@ -79,6 +79,7 @@ add_library(Mlt${MLT_VERSION_MAJOR}::mlt ALIAS mlt)
 target_sources(mlt PRIVATE ${MLT_PUBLIC_HEADERS})
 
 target_compile_options(mlt PRIVATE ${MLT_COMPILE_OPTIONS})
+target_compile_options(mlt PRIVATE -g)
 
 target_link_libraries(mlt PRIVATE m Threads::Threads ${CMAKE_DL_LIBS})
 

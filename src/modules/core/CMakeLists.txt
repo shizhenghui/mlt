@@ -54,6 +54,7 @@ add_custom_target(Other_core_Files SOURCES
 )
 
 target_compile_options(mltcore PRIVATE ${MLT_COMPILE_OPTIONS})
+target_compile_options(mltcore PRIVATE -g)
 
 target_link_libraries(mltcore PRIVATE m mlt Threads::Threads)
 

@@ -4,7 +4,10 @@ project(MLT-examples)
 
 option(WITH_PKGCONFIG "Use pkg-config to find MLT" OFF)
 
+message("CMAKE_CURRENT_BINARY_DIR: ${CMAKE_CURRENT_BINARY_DIR}")
+
 add_executable(play play.cpp)
+target_compile_options(play PRIVATE -g)
 
 if(WITH_PKGCONFIG)
   find_package(PkgConfig REQUIRED)
